@@ -1,8 +1,19 @@
 {
+  "routes": {
+    "/login/": "index.html",
+    "/sample/": "/js/sample.js"
+  },
   "headers": {
     "/*": {
       "X-Author": "itmo307710",
       "Access-Control-Allow-Origin": "*"
+    },
+    "/login/": {
+      "Content-Type": "text/plain; charset=UTF-8",
+      "Access-Control-Allow-Origin": "*"
+    },
+    "/sample/": {
+      "Content-Type": "text/plain; charset=UTF-8"
     }
   }
 }
