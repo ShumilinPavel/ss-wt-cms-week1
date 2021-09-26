@@ -1,13 +1,19 @@
 {
   "routes": {
     "/login/": "index.html",
-    "/sample/": "/js/sample.js"
+    "/sample/": "/js/sample.js",
+    "/promise/": "/js/promise.js",
+    "/fetch/": "fetch.html"
   },
   "headers": {
     "/**": {
       "X-Author": "itmo307710",
       "Access-Control-Allow-Origin": "*",
       "Content-Type": "text/plain; charset=UTF-8"
+    },
+    "/fetch/": {
+      "Access-Control-Allow-Origin": "*",
+      "Content-Type": "text/html; charset=UTF-8"
     }
   }
 }

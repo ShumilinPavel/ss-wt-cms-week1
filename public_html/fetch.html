@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <input type="text" id="inp">
+    <button id="bt">Click me</button>
+</body>
+<script>
+    document.getElementById("bt").addEventListener("click", async (ev) => {
+        const inp = document.getElementById("inp");
+        const result = await fetch(inp.value).then(x => x.text());
+        inp.value = result;
+    })
+</script>
+</html>
